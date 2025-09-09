@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#2D2D2D</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">SkyScope</string>
+    <string name="gcm_defaultSenderId" translatable="false">585753818014</string>
+    <string name="google_api_key" translatable="false">AIzaSyBczNqe8Ly54Qm_Nc5BZi8p3FkUik8HjDs</string>
+    <string name="google_app_id" translatable="false">1:585753818014:android:49c4e0c1a49c50f6581c8f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBczNqe8Ly54Qm_Nc5BZi8p3FkUik8HjDs</string>
+    <string name="google_storage_bucket" translatable="false">weatherapp-5b999.firebasestorage.app</string>
+    <string name="project_id" translatable="false">weatherapp-5b999</string>
+    <style name="Theme.WeatherApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+</resources>

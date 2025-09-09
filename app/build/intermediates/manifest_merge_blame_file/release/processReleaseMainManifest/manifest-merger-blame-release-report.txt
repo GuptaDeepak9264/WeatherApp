@@ -1,0 +1,397 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.weatherapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Internet access for API calls -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:6:5-66
+12-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:6:22-64
+13    <!-- Push notification ke liye -->
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:8:5-76
+14-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:8:22-74
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:26:5-79
+15-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:26:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:26:5-68
+16-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:26:22-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
+17-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
+18
+19    <permission
+19-->[androidx.core:core:1.13.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f0587e1689620bc586bd767d1e067cef\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.weatherapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.13.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f0587e1689620bc586bd767d1e067cef\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.13.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f0587e1689620bc586bd767d1e067cef\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.weatherapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.13.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f0587e1689620bc586bd767d1e067cef\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.13.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f0587e1689620bc586bd767d1e067cef\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:10:5-51:19
+26        android:allowBackup="true"
+26-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:11:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.13.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f0587e1689620bc586bd767d1e067cef\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+28        android:dataExtractionRules="@xml/data_extraction_rules"
+28-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:12:9-65
+29        android:extractNativeLibs="false"
+30        android:fullBackupContent="@xml/backup_rules"
+30-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:13:9-54
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:14:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:15:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:16:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:17:9-35
+35        android:theme="@style/Theme.WeatherApp" >
+35-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:18:9-48
+36
+37        <!-- Login Activity (App Entry Point) -->
+38        <activity
+38-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:22:9-30:20
+39            android:name="com.example.weatherapp.LoginActivity"
+39-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:23:13-42
+40            android:exported="true"
+40-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:24:13-36
+41            android:theme="@style/Theme.WeatherApp" >
+41-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:25:13-52
+42            <intent-filter>
+42-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:26:13-29:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:27:17-69
+43-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:27:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:28:17-77
+45-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:28:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <!-- Main Activity (opened after login) -->
+50        <activity
+50-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:33:9-35:39
+51            android:name="com.example.weatherapp.MainActivity"
+51-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:34:13-41
+52            android:exported="true" />
+52-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:35:13-36
+53
+54        <!-- ✅ Register Activity (fixed package path) -->
+55        <activity
+55-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:38:9-40:39
+56            android:name="com.example.weatherapp.ui.RegisterActivity"
+56-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:39:13-48
+57            android:exported="true" />
+57-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:40:13-36
+58
+59        <!-- Firebase Messaging Service -->
+60        <service
+60-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:43:9-49:19
+61            android:name="com.example.weatherapp.WeatherFirebaseMessagingService"
+61-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:44:13-60
+62            android:exported="false" >
+62-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:45:13-37
+63            <intent-filter>
+63-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:46:13-48:29
+64                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+64-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:47:17-78
+64-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:47:25-75
+65            </intent-filter>
+66        </service>
+67        <service
+67-->[com.google.firebase:firebase-auth-ktx:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\e374572ec858a5aab5e057f3f47579a5\transformed\firebase-auth-ktx-21.3.0\AndroidManifest.xml:8:9-14:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[com.google.firebase:firebase-auth-ktx:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\e374572ec858a5aab5e057f3f47579a5\transformed\firebase-auth-ktx-21.3.0\AndroidManifest.xml:9:13-84
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+70            android:exported="false" >
+70-->[com.google.firebase:firebase-auth-ktx:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\e374572ec858a5aab5e057f3f47579a5\transformed\firebase-auth-ktx-21.3.0\AndroidManifest.xml:10:13-37
+71            <meta-data
+71-->[com.google.firebase:firebase-auth-ktx:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\e374572ec858a5aab5e057f3f47579a5\transformed\firebase-auth-ktx-21.3.0\AndroidManifest.xml:11:13-13:85
+72                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+72-->[com.google.firebase:firebase-auth-ktx:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\e374572ec858a5aab5e057f3f47579a5\transformed\firebase-auth-ktx-21.3.0\AndroidManifest.xml:12:17-116
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-auth-ktx:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\e374572ec858a5aab5e057f3f47579a5\transformed\firebase-auth-ktx-21.3.0\AndroidManifest.xml:13:17-82
+74            <meta-data
+74-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+75                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+75-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-messaging-ktx:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\57c0c07b742c7305c17d53fdc58e85b9\transformed\firebase-messaging-ktx-23.1.2\AndroidManifest.xml:28:13-30:85
+78                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+78-->[com.google.firebase:firebase-messaging-ktx:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\57c0c07b742c7305c17d53fdc58e85b9\transformed\firebase-messaging-ktx-23.1.2\AndroidManifest.xml:29:17-126
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-messaging-ktx:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\57c0c07b742c7305c17d53fdc58e85b9\transformed\firebase-messaging-ktx-23.1.2\AndroidManifest.xml:30:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\381ed7654b244cba76886be23252fb82\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+81                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+81-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\381ed7654b244cba76886be23252fb82\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\381ed7654b244cba76886be23252fb82\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+84                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+84-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ankit\.gradle\caches\8.10.2\transforms\23d79e22a3aa205d35ddb8a4fd81db8d\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+87                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+87-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ankit\.gradle\caches\8.10.2\transforms\23d79e22a3aa205d35ddb8a4fd81db8d\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ankit\.gradle\caches\8.10.2\transforms\23d79e22a3aa205d35ddb8a4fd81db8d\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ankit\.gradle\caches\8.10.2\transforms\78241851c3de3920dbb6158651e4dc74\transformed\firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+90                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+90-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ankit\.gradle\caches\8.10.2\transforms\78241851c3de3920dbb6158651e4dc74\transformed\firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ankit\.gradle\caches\8.10.2\transforms\78241851c3de3920dbb6158651e4dc74\transformed\firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+92        </service>
+93
+94        <activity
+94-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+95            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+95-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+96            android:excludeFromRecents="true"
+96-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+97            android:exported="true"
+97-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+98            android:launchMode="singleTask"
+98-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+99-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+100            <intent-filter>
+100-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+101                <action android:name="android.intent.action.VIEW" />
+101-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+101-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+102
+103                <category android:name="android.intent.category.DEFAULT" />
+103-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+103-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+104                <category android:name="android.intent.category.BROWSABLE" />
+104-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+104-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+105
+106                <data
+106-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+107                    android:host="firebase.auth"
+107-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+108                    android:path="/"
+108-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+109                    android:scheme="genericidp" />
+109-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+110            </intent-filter>
+111        </activity>
+112        <activity
+112-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+113            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+113-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+114            android:excludeFromRecents="true"
+114-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+115            android:exported="true"
+115-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+116            android:launchMode="singleTask"
+116-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+117            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+117-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+118            <intent-filter>
+118-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+119                <action android:name="android.intent.action.VIEW" />
+119-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+119-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+121-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+122                <category android:name="android.intent.category.BROWSABLE" />
+122-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+122-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+123
+124                <data
+124-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+125                    android:host="firebase.auth"
+125-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+126                    android:path="/"
+126-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+127                    android:scheme="recaptcha" />
+127-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f033ef9fe5cb5003c1de0cf06ebba70b\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+128            </intent-filter>
+129        </activity>
+130
+131        <receiver
+131-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+132            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+132-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+133            android:exported="true"
+133-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+134            android:permission="com.google.android.c2dm.permission.SEND" >
+134-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+135            <intent-filter>
+135-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:35:13-37:29
+136                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+136-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:36:17-81
+136-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:36:25-78
+137            </intent-filter>
+138        </receiver>
+139        <!--
+140             FirebaseMessagingService performs security checks at runtime,
+141             but set to not exported to explicitly avoid allowing another app to call it.
+142        -->
+143        <service
+143-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+144            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+144-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+145            android:directBootAware="true"
+145-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+146            android:exported="false" >
+146-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\f914d39e71ac1fb7a6245d3e7acbae04\transformed\firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+147            <intent-filter android:priority="-500" >
+147-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:46:13-48:29
+148                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+148-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:47:17-78
+148-->C:\Users\ankit\AndroidStudioProjects\WeatherApp\app\src\main\AndroidManifest.xml:47:25-75
+149            </intent-filter>
+150        </service>
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+154            android:authorities="com.example.weatherapp.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+155            android:directBootAware="true"
+155-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ankit\.gradle\caches\8.10.2\transforms\692814ad991b87d1e4d83c1eaad7d4cd\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+158
+159        <activity
+159-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\402c2ec3fe1279ca77d329b1a4bab2d6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+160            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+160-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\402c2ec3fe1279ca77d329b1a4bab2d6\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\402c2ec3fe1279ca77d329b1a4bab2d6\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ankit\.gradle\caches\8.10.2\transforms\402c2ec3fe1279ca77d329b1a4bab2d6\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+163
+164        <provider
+164-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+165            android:name="androidx.startup.InitializationProvider"
+165-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+166            android:authorities="com.example.weatherapp.androidx-startup"
+166-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+167            android:exported="false" >
+167-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+168            <meta-data
+168-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+169                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+169-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+170                android:value="androidx.startup" />
+170-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cd4846d2f711c4262eedbfcec899cea2\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+171            <meta-data
+171-->[androidx.lifecycle:lifecycle-process:2.9.3] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cfb8a114b817b1cc5ff1be52665bccdf\transformed\lifecycle-process-2.9.3\AndroidManifest.xml:29:13-31:52
+172                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+172-->[androidx.lifecycle:lifecycle-process:2.9.3] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cfb8a114b817b1cc5ff1be52665bccdf\transformed\lifecycle-process-2.9.3\AndroidManifest.xml:30:17-78
+173                android:value="androidx.startup" />
+173-->[androidx.lifecycle:lifecycle-process:2.9.3] C:\Users\ankit\.gradle\caches\8.10.2\transforms\cfb8a114b817b1cc5ff1be52665bccdf\transformed\lifecycle-process-2.9.3\AndroidManifest.xml:31:17-49
+174            <meta-data
+174-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+175                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+175-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+176                android:value="androidx.startup" />
+176-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+177        </provider>
+178
+179        <meta-data
+179-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\ed281a5fc343e3a3fddd488140c4a6f0\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+180            android:name="com.google.android.gms.version"
+180-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\ed281a5fc343e3a3fddd488140c4a6f0\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+181            android:value="@integer/google_play_services_version" />
+181-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\ed281a5fc343e3a3fddd488140c4a6f0\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+182
+183        <receiver
+183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+184            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+184-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+185            android:directBootAware="false"
+185-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+186            android:enabled="true"
+186-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+187            android:exported="true"
+187-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+188            android:permission="android.permission.DUMP" >
+188-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+189            <intent-filter>
+189-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+190                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+191            </intent-filter>
+192            <intent-filter>
+192-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+193                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+194            </intent-filter>
+195            <intent-filter>
+195-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+196                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+197            </intent-filter>
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+199                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ankit\.gradle\caches\8.10.2\transforms\a98138906a50358bda65e416cc5fd773\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+200            </intent-filter>
+201        </receiver>
+202
+203        <service
+203-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\0886506cdda339d40a98104f9f3659b8\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+204            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+204-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\0886506cdda339d40a98104f9f3659b8\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+205            android:exported="false" >
+205-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\0886506cdda339d40a98104f9f3659b8\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+206            <meta-data
+206-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\0886506cdda339d40a98104f9f3659b8\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+207                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+207-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\0886506cdda339d40a98104f9f3659b8\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+208                android:value="cct" />
+208-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\0886506cdda339d40a98104f9f3659b8\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+209        </service>
+210        <service
+210-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+211            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+211-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+212            android:exported="false"
+212-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+213            android:permission="android.permission.BIND_JOB_SERVICE" >
+213-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+214        </service>
+215
+216        <receiver
+216-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+217            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+217-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+218            android:exported="false" />
+218-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ankit\.gradle\caches\8.10.2\transforms\34395585ca441ddca7a21a6321fc3efd\transformed\transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+219    </application>
+220
+221</manifest>
